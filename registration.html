@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>userRegistration</title>
+    <script  src="./js/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="./css/registration.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="userRegistration col-xs-offset-3 col-xs-6">
+                <form class="form" action="">
+                    <div class="type-account">
+                        
+                        <div class="form-inline text-center type">
+                            <label for="general" class="radio-inline">General</label>
+                            <input type="radio" id="general" name="general" >
+                            <label for="agent" class="radio-inline">Agent</label>
+                            <input type="radio" id="agent" name="agent" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="userName">Username</label>
+                        <input type="text" class="form-control" name="userName" id="userName" placeholder="Username" >
+                    </div>
+                    <div class="form-group">
+                        <label for="userFirstName">First Name</label>
+                        <input type="text" class="form-control" name="userFirstName" id="userFirstName" placeholder="Name" >
+                    </div>
+                    <div class="form-group">
+                        <label for="userLastName">Last Name</label>
+                        <input type="text" class="form-control" name="userLastName" id="userLastName" placeholder="Sirname" >
+                    </div>
+                    <label for="gender" id="ge">Select Gender</label><span id="spnError" class="error" style="display: none">*</span>
+                    <div class="form-group ">
+                        
+                        <input type="radio" id="male" name="gender" value="1" >
+                        <label for="male" class="radio-inline">Male</label>
+                        <input type="radio" id="female" value="2" name="gender" >
+                        <label for="female" class="radio-inline">Female</label>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email</label>
+                        <input type="email" class="form-control" name="userEmail" id="userEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="userConfirmEmail">Confirm Email</label>
+                        <input type="email" class="form-control" name="userConfirmEmail" id="userConfirmEmail" placeholder="Re-enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="userPassword" id="userPassword" placeholder="userPassword" >
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" class="form-control" name="confirmPassword" id="userConfirmPassword" placeholder="userPassword" >
+                    </div>
+                    <div class="form-group">
+                        <label for="selectques">Security Ques.</label>
+                        <select class="form-control" name="" id="selectques">
+                            <option value="q1">Name of pet</option>
+                            <option value="q2">Name of city</option>
+                            <option value="q3">Name of father</option>
+                        </select><br>
+                        <label for="answer">Answer</label>
+                        <input type="text" class="form-control" name="answer" id="answer" placeholder="Enter answer">
+                    </div>
+                    
+                    <input type="submit" class="col-xs-offset-4 col-xs-4 col-xs-push-4" name="register" value="Register">
+                    <button id="home" class="col-xs-4 col-xs-pull-8" ><a href="index.html">Go to Home</a></button>
+                    
+                </form>
+            </div>
+        </div>
+    </div>  
+    <script src="./js/registration.js"></script>
+</body>
+</html>
+
+

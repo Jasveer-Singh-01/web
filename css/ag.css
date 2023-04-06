@@ -1,0 +1,29 @@
+body{
+    
+    background: url('../pics/ag.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+ 
+}
+.agentLogin{
+ 
+    
+}
+
+input[type="text"],input[type="password"]
+{
+    border-radius: 25px;
+}
+
+input[type="submit"]
+{
+    background-color: rgb(219, 194, 79);
+    border-radius: 25px;
+}
+
+label{
+    color: brown;
+}
+
+
